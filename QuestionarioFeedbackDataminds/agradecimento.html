@@ -1,0 +1,30 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Obrigado - DataMinds</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function () {
+            const usuario = localStorage.getItem("usuario") || "Usuário";
+            const respostas = JSON.parse(localStorage.getItem("respostas")) || {};
+
+            document.getElementById("mensagemFinal").innerText = `Obrigado ${usuario}, seu feedback é muito importante para nós.`;
+
+            const resumo = document.getElementById("resumoRespostas");
+            for (const [pergunta, resposta] of Object.entries(respostas)) {
+                const p = document.createElement("p");
+                p.innerHTML = `<strong>${pergunta}</strong><br>${resposta}`;
+                resumo.appendChild(p);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h2 id="mensagemFinal">Obrigado pelo feedback!</h2>
+        <div id="resumoRespostas"></div>
+    </div>
+</body>
+</html>

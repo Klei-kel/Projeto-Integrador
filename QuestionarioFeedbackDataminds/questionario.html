@@ -1,0 +1,86 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionário - DataMinds</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>🧠 Questionário de Feedback Interno</h2>
+        <form id="questionarioForm">
+            <div class="card">
+                <p>1. Como você avalia o ambiente de trabalho da empresa?</p>
+                <div class="options">
+                    <input type="radio" name="q1" value="1"> 1
+                    <input type="radio" name="q1" value="2"> 2
+                    <input type="radio" name="q1" value="3"> 3
+                    <input type="radio" name="q1" value="4"> 4
+                    <input type="radio" name="q1" value="5"> 5
+                </div>
+            </div>
+            <div class="card">
+                <p>2. Você sente que a comunicação com a equipe está fluindo bem?</p>
+                <div class="options">
+                    <input type="radio" name="q2" value="Sim"> Sim
+                    <input type="radio" name="q2" value="Não"> Não
+                    <input type="radio" name="q2" value="Parcialmente"> Parcialmente
+                </div>
+            </div>
+            <div class="card">
+                <p>3. Há algo que você acredita que poderia ser melhorado na empresa?</p>
+                <textarea name="q3" rows="3" placeholder="(Resposta opcional)"></textarea>
+            </div>
+            <div class="card">
+                <p>4. Você recomendaria a empresa como um bom lugar para trabalhar?</p>
+                <div class="options">
+                    <input type="radio" name="q4" value="Sim"> Sim
+                    <input type="radio" name="q4" value="Não"> Não
+                    <input type="radio" name="q4" value="Talvez"> Talvez
+                </div>
+            </div>
+            <div class="card">
+                <p>5. Como você avalia o equilíbrio entre sua vida pessoal e profissional?</p>
+                <div class="options">
+                    <input type="radio" name="q5" value="1"> 1
+                    <input type="radio" name="q5" value="2"> 2
+                    <input type="radio" name="q5" value="3"> 3
+                    <input type="radio" name="q5" value="4"> 4
+                    <input type="radio" name="q5" value="5"> 5
+                </div>
+            </div>
+            <div class="card">
+                <p>6. Você sente que seu trabalho é reconhecido e valorizado?</p>
+                <div class="options">
+                    <input type="radio" name="q6" value="Sim"> Sim
+                    <input type="radio" name="q6" value="Não"> Não
+                    <input type="radio" name="q6" value="Às vezes"> Às vezes
+                </div>
+            </div>
+            <div class="card">
+                <p>7. Se desejar, conte o que poderia ser feito para você se sentir mais valorizado(a):</p>
+                <textarea name="q7" rows="3" placeholder="(Resposta opcional)"></textarea>
+            </div>
+            <div class="card">
+                <p>8. O que você considera mais positivo em trabalhar aqui?</p>
+                <textarea name="q8" rows="3" placeholder="Digite sua resposta..."></textarea>
+            </div>
+            <div class="card">
+                <p>9. Existe algo que você gostaria de ver diferente no ambiente de trabalho?</p>
+                <textarea name="q9" rows="3" placeholder="Digite sua resposta..."></textarea>
+            </div>
+            <div class="card">
+                <p>10. Você tem sugestões para melhorar o clima e a colaboração na empresa?</p>
+                <textarea name="q10" rows="3" placeholder="Digite sua resposta..."></textarea>
+            </div>
+            <div class="card">
+                <p>11. Gostaria de deixar algum comentário adicional?</p>
+                <textarea name="q11" rows="3" placeholder="Digite seu comentário..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar Respostas</button>
+        </form>
+    </div>
+</body>
+</html>
